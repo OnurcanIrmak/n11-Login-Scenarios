@@ -1,0 +1,46 @@
+UI Test Scenarios for Login Page
+
+Verify that all the labels and controls including text-boxes, buttons, and links are present on the Login page.
+
+Check that the font type and size of the labels and the text written on the different elements should be clearly visible.
+
+Verify that the size, color, and UI of the different elements are as per the specifications.
+
+Verify that the application’s UI is responsive i.e. it should adjust to different screen resolutions and devices.
+
+
+Functional Test Scenarios for Login Page
+
+Check if the password is in masked form when typed in the password field.
+
+Check if the password can be copy-pasted or not.
+
+Verify that the user is able to login by entering valid credentials and clicking on the ‘Login’ button.
+
+Verify that the user is able to login by entering valid credentials and pressing Enter key.
+
+Check that the user is not able to login with an invalid username and password.
+
+Verify that the validation message gets displayed in case the user leaves the username or password field as blank.
+
+Check that the validation message is displayed in the case the user exceeds the character limit of the user name and password fields.
+
+Verify that reset button functionality on the login page. Clicking on it should clear the textbox’s content.
+
+Verify if there is a checkbox with the label “remember password” on the login page.
+
+Verify that closing the browser should not log-out an authenticated user. Launching the application should lead the user to login state only.
+
+Security Test Cases for Login Page
+
+Verify that there is a limit on the total number of unsuccessful login attempts. So that a user cannot use a brute-force mechanism to try all possible combinations of username-password.
+
+Verify that in case of incorrect credentials, a message like “incorrect username or password” should get displayed. Instead of an exact message pointing to the incorrect field. This is because a message like “incorrect password” will help a hacker in knowing that the username is correct. In this way, he will just need to try a different combination on the password field only.
+
+Verify the login session timeout duration. So, that once logged-in a user cannot be authenticated for a life-time.
+
+Verify that once logged in, clicking the back button doesn’t logout the user.
+
+Verify if SQL Injection attacks work on the login page. The application should not be vulnerable to SQL injection attacks.
+
+Verify that XSS vulnerability should not work on the login page.
